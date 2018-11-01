@@ -1,4 +1,4 @@
 import 'package:backpack/src/app.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(new App());
+void main() => runApp(App());

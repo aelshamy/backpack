@@ -1,6 +1,7 @@
+import 'package:backpack/src/components/app_bars/back_app_bar.dart';
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:backpack/src/screens/login.dart';
-import 'package:backpack/src/ui/back_app_bar.dart';
-import 'package:backpack/src/ui/password_field.dart';
+import 'package:backpack/src/components/inputs/password_field.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
@@ -50,13 +51,10 @@ class SignUp extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.only(top: 30.0),
-            ),
-            RaisedButton(
-              child: Text(
-                'Sign up',
-                style: Theme.of(context).textTheme.display1,
+              child: PrimaryButton(
+                text: 'Sign up',
+                onPressed: () {},
               ),
-              onPressed: () {},
             ),
           ],
         ),

@@ -5,12 +5,14 @@ class PasswordField extends StatefulWidget {
   final String hintText;
   final String labelText;
   final String helperText;
+  final Widget prefixIcon;
 
   PasswordField({
     this.fieldKey,
-    this.hintText,
+    this.hintText = 'Password',
     this.labelText,
     this.helperText,
+    this.prefixIcon = const Icon(Icons.lock),
   });
   @override
   _PasswordFieldState createState() => _PasswordFieldState();
@@ -24,23 +26,20 @@ class _PasswordFieldState extends State<PasswordField> {
       key: widget.fieldKey,
       obscureText: _obscureText,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.only(top: 30.0, bottom: 10.0),
         hintText: widget.hintText,
         labelText: widget.labelText,
         helperText: widget.helperText,
-        suffixIcon: Padding(
-          padding: EdgeInsets.only(top: 15.0),
-          child: IconButton(
-            icon: Icon(
-              _obscureText ? Icons.visibility : Icons.visibility_off,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              setState(() {
-                _obscureText = !_obscureText;
-              });
-            },
+        prefixIcon: widget.prefixIcon,
+        suffixIcon: IconButton(
+          icon: Icon(
+            _obscureText ? Icons.visibility : Icons.visibility_off,
+            color: Colors.black,
           ),
+          onPressed: () {
+            setState(() {
+              _obscureText = !_obscureText;
+            });
+          },
         ),
       ),
     );

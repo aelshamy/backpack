@@ -41,7 +41,6 @@ class BackAppBar extends StatelessWidget implements PreferredSizeWidget {
     );
   }
 
-  // TODO: implement preferredSize
   @override
   Size get preferredSize => AppBar().preferredSize;
 }

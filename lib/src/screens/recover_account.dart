@@ -1,5 +1,6 @@
+import 'package:backpack/src/components/app_bars/back_app_bar.dart';
 import 'package:backpack/src/screens/phone_number.dart';
-import 'package:backpack/src/ui/back_app_bar.dart';
+
 import 'package:flutter/material.dart';
 
 class RecoverAccount extends StatelessWidget {

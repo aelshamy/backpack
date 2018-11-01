@@ -1,4 +1,5 @@
 import 'package:backpack/src/colors.dart';
+import 'package:backpack/src/screens/faq.dart';
 import 'package:backpack/src/screens/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,8 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: _backpackTheme,
-      home: OnBording(),
+      // home: OnBording(),
+      home: FAQ(),
     );
   }
 }
@@ -23,7 +25,6 @@ ThemeData _buildBackpackTheme() {
     primaryColorLight: backpacGrey1,
     primaryColorDark: backpackYellow,
     accentColor: backpackWhite,
-    buttonColor: backpackBlue,
     scaffoldBackgroundColor: backpackWhite,
     cardColor: backpackWhite,
     textSelectionColor: backpackYellow,
@@ -31,11 +32,13 @@ ThemeData _buildBackpackTheme() {
     primaryTextTheme: _buildBackpackTextTheme(base.primaryTextTheme),
     accentTextTheme: _buildBackpackTextTheme(base.accentTextTheme),
     primaryIconTheme: base.iconTheme.copyWith(color: backpackWhite),
-    buttonTheme: base.buttonTheme.copyWith(
-      // textTheme: ButtonTextTheme.accent,
-      // padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-    ),
+    // buttonColor: backpackBlue,
+    // buttonTheme: base.buttonTheme.copyWith(
+    //   padding: EdgeInsets.symmetric(vertical: 55.0),
+    //   // textTheme: ButtonTextTheme.accent,
+    //   // padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+    //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
+    // ),
   );
 }
 

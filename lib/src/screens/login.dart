@@ -1,8 +1,8 @@
+import 'package:backpack/src/components/app_bars/back_app_bar.dart';
 import 'package:backpack/src/screens/profile.dart';
 import 'package:backpack/src/screens/recover_account.dart';
 import 'package:backpack/src/screens/signup.dart';
-import 'package:backpack/src/ui/back_app_bar.dart';
-import 'package:backpack/src/ui/password_field.dart';
+import 'package:backpack/src/components/inputs/password_field.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {

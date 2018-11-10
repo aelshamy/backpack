@@ -1,7 +1,6 @@
-import 'package:backpack/src/colors.dart';
-import 'package:backpack/src/screens/faq.dart';
-import 'package:backpack/src/screens/onboarding.dart';
 import 'package:flutter/material.dart';
+import 'package:backpack/src/colors.dart';
+import 'package:backpack/src/screens/onboarding.dart';
 
 class App extends StatelessWidget {
   @override
@@ -10,8 +9,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: _backpackTheme,
-      // home: OnBording(),
-      home: FAQ(),
+      home: OnBording(),
     );
   }
 }

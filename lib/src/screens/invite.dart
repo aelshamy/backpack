@@ -1,3 +1,4 @@
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:flutter/material.dart';
 
 class Invite extends StatelessWidget {
@@ -20,14 +21,10 @@ class Invite extends StatelessWidget {
                   right: 0.0,
                   child: Container(
                     child: Center(
-                      child: RawMaterialButton(
-                        child: Text('Invite'),
+                      child: PrimaryButton(
+                        text: 'Invite',
+                        isTiny: true,
                         onPressed: () {},
-                        // constraints: BoxConstraints(minHeight: 0.0),
-                        fillColor: Colors.blue.shade700,
-                        textStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                        padding: EdgeInsets.all(10.0),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                       ),
                     ),
                   ),
@@ -50,17 +47,9 @@ class Invite extends StatelessWidget {
                 ),
               ],
             ),
-            OutlineButton(
-              textColor: Theme.of(context).primaryColor,
-              padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
-              borderSide: BorderSide(
-                color: Theme.of(context).primaryColor,
-                width: 2.0,
-              ),
-              child: Text(
-                'Got it',
-                style: Theme.of(context).textTheme.title.copyWith(color: Theme.of(context).primaryColor),
-              ),
+            PrimaryButton(
+              text: 'Got it',
+              isOutline: true,
               onPressed: () {},
             ),
           ],

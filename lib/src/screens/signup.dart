@@ -34,20 +34,26 @@ class SignUp extends StatelessWidget {
           children: <Widget>[
             TextField(
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.only(top: 30.0, bottom: 10.0),
                 labelStyle: TextStyle(color: Colors.black),
+                prefixIcon: Icon(Icons.person),
                 hintText: 'Name',
               ),
             ),
-            TextField(
-              decoration: InputDecoration(
-                contentPadding: EdgeInsets.only(top: 30.0, bottom: 10.0),
-                labelStyle: TextStyle(color: Colors.black),
-                hintText: 'Email',
+            Container(
+              margin: EdgeInsets.only(top: 10.0),
+              child: TextField(
+                decoration: InputDecoration(
+                  labelStyle: TextStyle(color: Colors.black),
+                  prefixIcon: Icon(Icons.email),
+                  hintText: 'Email',
+                ),
               ),
             ),
-            PasswordField(
-              hintText: 'Password',
+            Container(
+              margin: EdgeInsets.only(top: 10.0),
+              child: PasswordField(
+                hintText: 'Password',
+              ),
             ),
             Container(
               margin: EdgeInsets.only(top: 30.0),

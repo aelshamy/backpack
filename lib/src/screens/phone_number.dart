@@ -1,4 +1,5 @@
 import 'package:backpack/src/components/app_bars/back_app_bar.dart';
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:flutter/material.dart';
 
 class PhoneNumber extends StatelessWidget {
@@ -25,17 +26,9 @@ class PhoneNumber extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 30.0),
             ),
-            OutlineButton(
-              textColor: Theme.of(context).primaryColor,
-              padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
-              borderSide: BorderSide(
-                color: Theme.of(context).primaryColor,
-                width: 2.0,
-              ),
-              child: Text(
-                'Next',
-                style: Theme.of(context).textTheme.title.copyWith(color: Theme.of(context).primaryColor),
-              ),
+            PrimaryButton(
+              isOutline: true,
+              text: 'Next',
               onPressed: () {},
             ),
           ],

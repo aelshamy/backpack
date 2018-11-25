@@ -42,7 +42,7 @@ flutter:
     - assets/invite.png
     - assets/discover.png
     - assets/profile.jpg
-    - assets/card_top.png
+    - assets/berlin.jpg
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

@@ -1,4 +1,5 @@
 import 'package:backpack/src/components/app_bars/back_app_bar.dart';
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:backpack/src/screens/profile.dart';
 import 'package:backpack/src/screens/recover_account.dart';
 import 'package:backpack/src/screens/signup.dart';
@@ -35,13 +36,16 @@ class Login extends StatelessWidget {
           children: <Widget>[
             TextField(
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.only(top: 30.0, bottom: 10.0),
+                prefixIcon: Icon(Icons.email),
                 labelStyle: TextStyle(color: Colors.black),
                 hintText: 'Email',
               ),
             ),
-            PasswordField(
-              hintText: 'Password',
+            Container(
+              margin: EdgeInsets.only(top: 20.0),
+              child: PasswordField(
+                hintText: 'Password',
+              ),
             ),
             Container(
               alignment: Alignment.centerRight,
@@ -64,11 +68,8 @@ class Login extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(top: 30.0),
             ),
-            RaisedButton(
-              child: Text(
-                'Log in',
-                style: Theme.of(context).textTheme.display1,
-              ),
+            PrimaryButton(
+              text: 'Log in',
               onPressed: () {
                 Navigator.pushReplacement(
                   context,

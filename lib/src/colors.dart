@@ -7,6 +7,6 @@ const backpackWhite = Colors.white;
 const backpackRed = Colors.red;
 const backpackSalmon = const Color(0xFFFE5F5F);
 
-const backpacGrey1 = const Color(0xFF707070);
-const backpacGrey2 = const Color(0xFF9F9F9F);
-const backpacGrey3 = const Color(0xFFE9E9E9);
+const backpackGrey1 = const Color(0xFF707070);
+const backpackGrey2 = const Color(0xFF9F9F9F);
+const backpackGrey3 = const Color(0xFFE9E9E9);

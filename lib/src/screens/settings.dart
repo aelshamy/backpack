@@ -21,7 +21,7 @@ class Settings extends StatelessWidget {
                   SwitchListTile(
                     title: Text('Login with Touch ID'),
                     value: true,
-                    inactiveTrackColor: backpacGrey2,
+                    inactiveTrackColor: backpackGrey2,
                     activeTrackColor: Theme.of(context).primaryColorDark,
                     activeColor: Colors.white,
                     onChanged: (bool value) {},
@@ -71,14 +71,14 @@ class Settings extends StatelessWidget {
                   SwitchListTile(
                     title: Text('Make my account private'),
                     value: false,
-                    inactiveTrackColor: backpacGrey2,
+                    inactiveTrackColor: backpackGrey2,
                     activeTrackColor: Theme.of(context).primaryColorDark,
                     activeColor: Colors.white,
                     onChanged: (bool value) {},
                   ),
                   SwitchListTile(
                     title: Text('Enable 2FA'),
-                    inactiveTrackColor: backpacGrey2,
+                    inactiveTrackColor: backpackGrey2,
                     activeTrackColor: Theme.of(context).primaryColorDark,
                     activeColor: Colors.white,
                     value: true,

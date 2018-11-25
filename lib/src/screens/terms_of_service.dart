@@ -1,4 +1,6 @@
+import 'package:backpack/src/colors.dart';
 import 'package:backpack/src/components/app_bars/right_title_app_bar.dart';
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:backpack/src/components/paragraph.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +26,29 @@ class TermsOfService extends StatelessWidget {
             Paragraph(
               text:
                   "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                PrimaryButton(
+                  text: 'Accept',
+                  isTiny: true,
+                  color: backpackYellow,
+                  textColor: backpackBlack,
+                  onPressed: () {},
+                  isFlat: true,
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 20.0),
+                  child: PrimaryButton(
+                    text: 'Decline',
+                    isTiny: true,
+                    isOutline: true,
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

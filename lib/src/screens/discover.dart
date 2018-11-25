@@ -1,3 +1,5 @@
+import 'package:backpack/src/colors.dart';
+import 'package:backpack/src/components/buttons/primary_button.dart';
 import 'package:flutter/material.dart';
 
 class Discover extends StatelessWidget {
@@ -20,14 +22,12 @@ class Discover extends StatelessWidget {
                   right: 0.0,
                   child: Container(
                     child: Center(
-                      child: RawMaterialButton(
-                        child: Text('Join'),
+                      child: PrimaryButton(
+                        text: 'Join',
+                        isTiny: true,
+                        color: backpackYellow,
+                        textColor: backpackBlack,
                         onPressed: () {},
-                        // constraints: BoxConstraints(minHeight: 0.0),
-                        fillColor: Colors.yellow.shade700,
-                        textStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-                        padding: EdgeInsets.all(10.0),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                       ),
                     ),
                   ),
@@ -50,17 +50,9 @@ class Discover extends StatelessWidget {
                 ),
               ],
             ),
-            OutlineButton(
-              textColor: Theme.of(context).primaryColor,
-              padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
-              borderSide: BorderSide(
-                color: Theme.of(context).primaryColor,
-                width: 2.0,
-              ),
-              child: Text(
-                'Next',
-                style: Theme.of(context).textTheme.title.copyWith(color: Theme.of(context).primaryColor),
-              ),
+            PrimaryButton(
+              text: 'Next',
+              isOutline: true,
               onPressed: () {},
             ),
           ],

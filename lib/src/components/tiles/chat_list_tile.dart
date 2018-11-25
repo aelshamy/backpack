@@ -1,3 +1,4 @@
+import 'package:backpack/src/components/circular_container.dart';
 import 'package:backpack/src/components/tiles/circle_avatar_list_tile.dart';
 import 'package:flutter/material.dart';
 
@@ -22,12 +23,9 @@ class ChatListTile extends StatelessWidget {
           ),
           Container(
             margin: EdgeInsets.only(top: 7.0),
-            width: 10.0,
-            height: 10.0,
-            decoration: isOnline
-                ? BoxDecoration(
-                    borderRadius: BorderRadius.circular(10.0),
-                    color: Colors.blue,
+            child: isOnline
+                ? CircularContainer(
+                    size: 7.0,
                   )
                 : null,
           ),

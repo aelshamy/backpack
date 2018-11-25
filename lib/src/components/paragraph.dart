@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Paragraph extends StatelessWidget {
   final String text;
   final bool isBold;
+
   Paragraph({Key key, this.text, this.isBold = false}) : super(key: key);
 
   @override
